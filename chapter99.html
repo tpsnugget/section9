@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="section9.css">
+
+   <title>Section 9, Chapter 99</title>
+</head>
+
+<body>
+
+<div class="container mt-3">
+
+      <h1>Section 9, Chapter 99</h1>
+
+      <!-- 
+         1.  Need to make the container a flexbox
+         1a. That makes the buttons fill the box vertically
+             Flexboxes in Bootstrap 4 have main axis from left to right (start
+             to end) and the cross axis is from top to bottom
+         2.  justify-content is for the main axes and the browser default is 
+             start, which is the left side as show below
+         3.  align-items is for the cross axis and the default is align-items-stretch
+             which is why the buttons stretch from top to bottom
+       -->
+      <div class="border border-dark d-flex mb-3">
+               <button class="btn btn-info btn-lg">Large</button>
+               <button class="btn btn-warning">Small</button>
+      </div>
+
+      <!-- 
+         1.  Now set to end
+       -->
+      <div class="border border-dark d-flex mb-3 justify-content-end">
+               <button class="btn btn-info btn-lg">Large</button>
+               <button class="btn btn-warning">Small</button>
+      </div>
+
+      <!-- 
+         1.  Now set to center
+       -->
+      <div class="border border-dark d-flex mb-3 justify-content-center">
+               <button class="btn btn-info btn-lg">Large</button>
+               <button class="btn btn-warning">Small</button>
+      </div>
+
+      <!-- 
+         1.  Now set to between, it divides up the space and distributes it
+             evenly
+       -->
+      <div class="border border-dark d-flex mb-3 justify-content-between">
+               <button class="btn btn-info btn-lg">Large</button>
+               <button class="btn btn-warning">Small</button>
+               <button class="btn btn-info btn-lg">Large</button>
+      </div>
+
+      <!-- 
+         1.  Now set to around, this distributes the space evenly too on either
+             side of each item
+       -->
+      <div class="border border-dark d-flex mb-3 justify-content-around">
+               <button class="btn btn-info btn-lg">Large</button>
+               <button class="btn btn-warning">Small</button>
+               <button class="btn btn-info btn-lg">Large</button>
+      </div>
+
+      <!-- 
+         1.  align-items-start
+       -->
+      <div class="border border-dark d-flex mb-3 justify-content-around align-items-start">
+               <button class="btn btn-info btn-lg">Large</button>
+               <button class="btn btn-warning">Small</button>
+               <button class="btn btn-info btn-lg">Large</button>
+      </div>
+
+      <!-- 
+         1.  align-items-selft
+       -->
+      <div class="border border-dark d-flex mb-3 justify-content-around">
+               <button class="btn btn-info btn-lg align-self-start">Large</button>
+               <button class="btn btn-warning align-self-center">Small</button>
+               <button class="btn btn-info btn-lg align-self-end">Large</button>
+      </div>
+
+</div>
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
