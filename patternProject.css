@@ -1,0 +1,7 @@
+/* center center below center aligns the image both horizontally and vertically */
+#header {
+   /* background: url("martin-sX4lxBWV0-A-unsplash.jpg") center center / cover no-repeat; */
+   background: url("martin-sX4lxBWV0-A-unsplash.jpg") center center;
+   /* background: url("martin-sX4lxBWV0-A-unsplash.jpg"); */
+   color: white;
+}
